@@ -5,7 +5,7 @@
 // 8 7,8 -7,1 9
 
 Console.Clear();
-Console.WriteLine("Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.\n");
+Console.WriteLine("Задача 47. Задайте двумерный массив размером M x N, заполненный случайными вещественными числами.\n");
 
 Console.Write("Введите M: ");
 int M = Convert.ToInt32(Console.ReadLine());
@@ -22,7 +22,7 @@ for (int i = 0; i < doubleArray.GetLength(0); i++)
     for (int j = 0; j < doubleArray.GetLength(1); j++)
     {
         doubleArray[i,j] = new Random().NextDouble();
-        Console.Write($"{doubleArray[i,j]} ");
+        Console.Write($"{doubleArray[i,j],1:N2}\t");
     }  
     Console.WriteLine();  
 }
